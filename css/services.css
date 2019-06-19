@@ -1,0 +1,86 @@
+div#services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+/*     margin-bottom: 41px; */
+}
+div#services > img{
+    align-self: flex-end;
+    margin: 20px 0px;
+}
+div#services > .service_block{
+    width: 220px;
+    height: 340px;
+    box-shadow: inset 0 0 2px rgba(163, 163, 161, 0.2);
+    background-color: #e3d6c3;
+    margin-top: 20px;
+    margin-right: 16px;
+}
+/* div#services :first-child{
+    margin-left: 16px;
+} */
+/* div#services > .service_block:last-child{
+    margin-right: 0px;
+} */
+div#services > .service_block:hover {
+    width: 220px;
+    height: 340px;
+    box-shadow: inset 0 0 2px rgba(163, 163, 161, 0.2);
+    border: 1px solid #b84e1d;
+    background-color: #e3d6c3;
+    margin-right: 16px;
+}
+div#services > .service_block:hover .service_block_logo{
+    width:100px;
+    height:100px;
+    background-image: url("../images/services/Brown_Round.png");
+    background-repeat: no-repeat;
+    margin: 20px 60px 34px;
+}
+
+
+#services > .service_block > .service_block_logo{
+    width:100px;
+    height:100px;
+    background-image: url("../images/services/Gray_Round.png");
+    background-repeat: no-repeat;
+    margin: 20px 60px 34px;
+}
+#services > .service_block > .service_block_logo > img[alt=mac]{
+    padding: 27px 0px 0px 21px;
+}
+#services > .service_block > .service_block_logo > img[alt=note]{
+    padding: 20px 0px 0px 26px;
+}
+#services > .service_block > .service_block_logo > img[alt=person]{
+    padding: 18px 0px 0px 21px;
+}
+#services > .service_block > .service_block_logo > img[alt=gallery]{
+    padding: 24px 0px 0px 20px;
+}
+
+#services > .service_block > .service_block_tittle{
+    /* Style for "Responsive" */
+    color: #555555;
+    font-family: "Merriweather Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "Responsive" */
+    letter-spacing: 0.45px;
+    margin-left: 17px;
+}
+#services > .service_block > .service_block_info{
+    /* Style for "I am so cl" */
+    
+    color: #888888;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 10px 15px 0px;
+    text-align: center; 
+}

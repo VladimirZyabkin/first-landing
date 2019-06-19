@@ -1,0 +1,10 @@
+.block_info{
+    /* Style for "Фигура 1" */
+    width: 662px;
+    height: 350px;
+    border: 1px solid #4e3644;
+    background-color: rgba(76, 52, 66, 0.5);
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+#demo img{}

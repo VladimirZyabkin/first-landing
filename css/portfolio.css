@@ -1,0 +1,91 @@
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25.5208333333%;
+    margin-right: 24%; 
+}
+.portfolio_tittle{
+    /* Style for "PORTFOLIO" */
+    width: 103px;
+    color: #666666;
+    font-family: "Merriweather Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "PORTFOLIO" */
+    letter-spacing: 0.45px;
+    text-align: center;
+/*     padding-bottom: 27px; */
+}
+.portfolio_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio_content_block{
+    /* Style for "Rectangle" */
+    width: 220px;
+    height: 174px;
+    margin-top:20px;
+    margin-right:20px; 
+}
+.checked{
+    box-shadow: inset 0 0 2px rgba(163, 163, 161, 0.2);
+    background-color: #b14519;
+}
+.unchecked{
+    box-shadow: inset 0 0 2px rgba(163, 163, 161, 0.2);
+    background-color: #3c3e3a;
+}
+.portfolio_content_block_info{
+/* Style for "It is a lo" */
+    width: 185px;
+    color: #ffffff;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    /* Text style for "I, t is a" */
+    letter-spacing: 0.35px;
+    margin: 5px auto;
+}
+.portfolio_opacity{
+    opacity: 0.45;
+}
+
+
+
+/*      ------------ PORTFOLIO ARROWS ------------     */
+#portfolio-arrows{
+    display: flex;
+    flex-direction: row;
+}
+#portfolio-arrows > div{
+    width: 26px;
+    height: 26px;
+    margin-top: 6px;
+}
+img[alt=Line_Portfolio]{
+    width: 44.1145833333%;
+    margin-left: 25.0520833333%;
+    padding: 20px 0px;
+    margin-right: 15px;
+}
+.arrow{
+    background-image: url("../images/portfolio/shape.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:2px;
+}
+.pressed{
+    background-image: url("../images/portfolio/press_shape.png");
+}
+img[alt=left-arrow]{
+    padding-left: 4px; 
+}
+img[alt=right-arrow]{
+    padding-left: 6px; 
+}
+

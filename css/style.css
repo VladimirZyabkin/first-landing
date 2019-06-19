@@ -1,0 +1,13 @@
+body{
+    /* Style for "content bg" 
+    width: 1920px;
+    height: 2721px;*/
+    margin:0px;
+    padding:0px;
+    background-color: #eae1d2;
+}
+img[alt=Line]{
+    width: 49.8958333333%;
+    margin: 20px auto;
+    display: block;
+}

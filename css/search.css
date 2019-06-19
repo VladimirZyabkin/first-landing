@@ -1,0 +1,50 @@
+#search{
+    background-image: url("../images/search/Shape_40.png");
+    height: 150px;
+    padding-top: 10px;
+}
+
+.search_logo{
+    /* Style for "Search" */
+    width: 149px;
+    height: 36px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-family: "Merriweather Sans";
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Text style for "Search" */
+    letter-spacing: 1.8px;
+    margin: 0 auto;
+    padding: auto;
+}
+.search_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+.search_content > input{
+    /* Style for "Rectangle" */
+    width: 40.104166667%;
+    height: 38px;
+    border: 1px solid #954019;
+    background-color: #ffffff;
+}
+.search_content > button{
+    /* Style for "Rounded Re" */
+width: 170px;
+height: 40px;
+border: 1px solid #d4c9b8;
+background-color: #e3d6c3;
+/* Style for "Search" */
+color: #bb4a1b;
+font-family: "Noto Sans";
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+/* Text style for "Search" */
+letter-spacing: 0.7px;
+}

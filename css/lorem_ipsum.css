@@ -1,0 +1,68 @@
+#lorem-ipsum{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25.5208333333%;
+    margin-right: 24%;
+}
+.li_title{
+    color: #666666;
+    font-family: "Merriweather Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+}
+#lorem-ipsum .block{
+    width: 960px;
+    height: 312px;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid #eae1d2;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top:20px;
+    padding: 20px 20px 20px 10px;
+}
+.li_image{
+    width: 340px;
+    height: 270px;
+    float: left;
+    background-color: blue;
+    background-image: url("../images/lorem_ipsum/Layer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    padding: 227px 0px 0px 0px; 
+}
+.block > span{
+    display: inline-block;
+
+    margin-bottom: 10px;
+    /* Style for "Why do we" */
+    color: #666666;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "Why do we" */
+    letter-spacing: 0.35px;
+}
+.li_img_info{
+    /* Style for "Rectangle" */
+    width: 230px;
+    height: 31px;
+    background-color: rgba(30, 21, 27, 0.5);
+    /* Style for "There are" */
+    color: #ffffff;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    /* Text style for "T, here ar" */
+    letter-spacing: 0.35px;
+    padding: 5px 0px 0px 10px;
+}
+.block :last-child{
+    color: #888888;
+    font-family: "Noto Sans";
+}

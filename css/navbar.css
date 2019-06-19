@@ -1,0 +1,28 @@
+/* nav a[class=navbar-brand] */#brand_name {
+    /* Style for "COMPANY NA" */
+    width: 302px;
+
+    color: #65270c;
+    font-family: "Merriweather Sans";
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: auto;
+    padding-left: 25%;
+    z-index: 1;
+}
+#collapsibleNavbar{
+    padding-left: 21.2%;
+    z-index: 0;
+}
+#collapsibleNavbar ul li a[class^=nav-link]{
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 20px;
+
+}
+

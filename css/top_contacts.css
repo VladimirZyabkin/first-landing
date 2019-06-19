@@ -1,0 +1,41 @@
+#top_contacts{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    padding-left: 52.1875%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#top_contacts div img[alt=Layer]{
+    display: inline-block; 
+}
+#top_contacts div img[alt=Email]{
+    display: inline-block; 
+}
+#top_contacts a {
+    text-decoration: none;
+}
+#top_contacts a[href^=tel]{
+    /* Style for "+792 567 8" */
+    width: 122px;
+    height: 13px;
+    color: #000000;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 5px;
+    padding-right: 20px; 
+}
+#top_contacts a[href^=mailto]{
+    /* Style for "contact@bl" */
+    width: 251px;
+    height: 16px;
+    color: #000000;
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-left: 5px;
+    /* padding: 13px 0px 12px 5px; */ 
+}
