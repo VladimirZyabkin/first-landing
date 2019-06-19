@@ -15,7 +15,7 @@
     /* Text style for "LATEST NEW" */
     letter-spacing: 0.45px;
 }
-.news_block{
+.news_container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -30,5 +30,10 @@
 .nb_row{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
+.news_block{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
