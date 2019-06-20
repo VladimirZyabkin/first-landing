@@ -1,7 +1,11 @@
-/* nav a[class=navbar-brand] */#brand_name {
-    /* Style for "COMPANY NA" */
+#nbMenu{
+    background-image: url("../images/navbar/Shape_63.png"); 
+    height: 50px; 
+    margin: 0; 
+    padding: 0;
+}
+#brand_name {
     width: 302px;
-
     color: #65270c;
     font-family: "Merriweather Sans";
     font-size: 36px;
@@ -12,6 +16,8 @@
     z-index: 1;
 }
 #collapsibleNavbar{
+    background-image: url("../images/navbar/Shape_63.png");
+    background-size:cover;
     padding-left: 21.2%;
     z-index: 0;
 }
