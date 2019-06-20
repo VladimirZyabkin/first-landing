@@ -1,0 +1,109 @@
+#footer{
+    height: 380px;
+    background-color: #3c3c3c;
+}
+.footer_block_info{
+    margin-left: 25.5208333333%;
+    margin-right: 24%;
+}
+.footer_info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.footer_tittle{
+    /* Style for "NAVIGATION" */
+    width: 89px;
+    color: #e1e1e1;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "NAVIGATION" */
+    letter-spacing: 0.35px;
+}
+.navigation_menu > ul{
+    list-style-image: url("../images/footer/list_style_image.png");
+    margin: 10px;
+    padding: 0;
+    
+}
+.navigation_menu a{
+    color: #bdbcbc;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.footer_contacts > span{
+    color: #bcbcbc;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.footer_form_input{
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    border: 1px solid #4d5254;
+    background-color: #eff0f0;
+}
+form > input{
+    margin-bottom: 10px;
+}
+form > input[type=tel], input[type=email], #name{
+    /* Style for "Shape 70" */
+    width: 260px;
+    height: 30px;
+}
+form > #msg{
+    width: 260px;
+    height: 60px;
+}
+form > input[type=submit]{
+    /* Style for "Shape 39" */
+    width: 120px;
+    height: 30px;
+    border: 1px solid #a82020;
+    background-color: #b84a19;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+    
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+    color: #fdfefe;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "CONTACT US" */
+    letter-spacing: 0.7px;
+}
+.footer_links_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.footer_links_logo > img{
+    margin-right: 8px;
+}
+.copyright{
+    margin-top: 15px;
+    height: 69px;
+    background-color: #2e2d2d;
+    
+}
+.copyright > span{
+    position: relative;
+    top:30%;
+    margin-left: 25.5208333333%;
+    width: 287px;
+    height: 14px;
+    color: #888888;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+

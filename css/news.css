@@ -19,13 +19,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* Style for "bg" */
+   
     width: 960px;
     height: 339px;
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.02);
     border: 1px solid #eae1d2;
     background-color: rgba(255, 255, 255, 0.3);
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 .nb_row{
     display: flex;
@@ -38,9 +38,58 @@
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.news_container > .row > div > img{
-    float: left;
+.news_block > div{
+    width: 320px;
+    margin-top: 13px;
 }
-.news_container > .row > div > div > {
-    overflow: hidden;
+.news_block > img{
+    align-self: flex-start;
+    margin: 10px 20px 0px 10px;
+}
+.news_block > div > span{
+    /* Style for "SOME INTER" */
+    height: 11px;
+    color: #666666;
+    font-family: "Merriweather Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    /* Text style for "SOME INTER" */
+    letter-spacing: 0.35px;
+}
+.news_block > div > p{
+    /* Style for "Lorem ipsu" */
+    height: 59px;
+    color: #888888;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    /* Text style for "Lorem ipsu" */
+    letter-spacing: 0.35px;
+}
+.news_block > div > button{
+    /* Style for "Shape 39 c" */
+    width: 100px;
+    height: 30px;
+    /* Style for "READ MORE" */
+    /* Style for "Shape 39" */
+    border: 1px solid #a82020;
+    background-color: #b84a19;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+    color: #fdfefe;
+    font-family: "Noto Sans";
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    /* Text style for "READ MORE" */
+    letter-spacing: 0.7px;
+}
+.topMargin{
+    margin-top: 10px;
+}
+.bottomMargin{
+    margin-bottom: 10px;
 }
