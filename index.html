@@ -159,30 +159,40 @@
 <div id="portfolio">
     <div class="portfolio_tittle">Portfolio</div>
     <div class="portfolio_content">
-        <div class="portfolio_content_block checked">
-            <img class="portfolio_opacity" src="images/portfolio/Layer_126.png" alt="Layer_126" />
-            <div class="portfolio_content_block_info">It is a long established fact</div>
-        </div>
-        <div class="portfolio_content_block unchecked">
-            <img src="images/portfolio/Layer_125.png" alt="Layer_125" />
-            <div class="portfolio_content_block_info">It is a long established fact</div>
-        </div>
-        <div class="portfolio_content_block unchecked">
-            <img src="images/portfolio/Layer_124.png" alt="Layer_124" />
-            <div class="portfolio_content_block_info">It is a long established fact</div>
-        </div>
-        <div class="portfolio_content_block unchecked">
-            <img src="images/portfolio/Layer_123.png" alt="Layer_123" />
-            <div class="portfolio_content_block_info">It is a long established fact</div>
+        <div class="portfolio_content_mask">
+            <div class="portfolio_content_block">
+                <img src="images/portfolio/Layer_123.png" alt="Layer_123" />
+                <div class="portfolio_content_block_info">It is a long established fact</div>
+            </div>
+            <div class="portfolio_content_block">
+                <img src="images/portfolio/Layer_126.png" alt="Layer_126" />
+                <div class="portfolio_content_block_info">It is a long established fact</div>
+            </div>
+            <div class="portfolio_content_block">
+                <img src="images/portfolio/Layer_125.png" alt="Layer_125" />
+                <div class="portfolio_content_block_info">It is a long established fact</div>
+            </div>
+            <div class="portfolio_content_block">
+                <img src="images/portfolio/Layer_124.png" alt="Layer_124" />
+                <div class="portfolio_content_block_info">It is a long established fact</div>
+            </div>
+            <div class="portfolio_content_block">
+                <img src="images/portfolio/Layer_123.png" alt="Layer_123" />
+                <div class="portfolio_content_block_info">It is a long established fact</div>
+            </div>
+            <div class="portfolio_content_block">
+                <img src="images/portfolio/Layer_126.png" alt="Layer_126" />
+                <div class="portfolio_content_block_info">It is a long established fact</div>
+            </div>
         </div>
     </div>
 </div>
 <div id="portfolio-arrows">
     <img src="images/Line.png" alt="Line_Portfolio"/>
-    <div class="arrow" onclick="selectPortfolio(-1); return false;">
+    <div class="arrow" onclick="pressLeft(); return false;">
         <img src="images/portfolio/left-arrow.png" alt="left-arrow" />
     </div>
-    <div class="arrow pressed" onclick="selectPortfolio(1); return false;">
+    <div class="arrow" onclick="pressRight(); return false;">
         <img src="images/portfolio/right-arrow.png" alt="right-arrow" />
     </div>
 </div>
