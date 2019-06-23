@@ -1,15 +1,17 @@
 #top_contacts{
     display: flex; 
     flex-direction: row; 
+    justify-content: flex-end;
     flex-wrap: wrap; 
-    padding-left: 52.1875%;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-right: 25.57291666667%;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
 }
-#top_contacts div img[alt=Layer]{
-    display: inline-block; 
+#top_contacts > div > img[alt=Layer]{
+    display: inline-block;
+
 }
-#top_contacts div img[alt=Email]{
+#top_contacts > div > img[alt=Email]{
     display: inline-block; 
 }
 #top_contacts a {
@@ -37,5 +39,109 @@
     font-weight: 400;
     line-height: 26px;
     padding-left: 5px;
-    /* padding: 13px 0px 12px 5px; */ 
+}
+
+@media screen and (max-width: 1280px){
+    #top_contacts{
+        padding-right: 25.546875%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    #top_contacts > div > img[alt=Layer]{
+        width:6px;
+        height:10px;
+    }
+    #top_contacts > div > img[alt=Email]{
+        width:10px;
+        height:7px;
+    }
+    #top_contacts a[href^=tel]{
+        /* Style for "+792 567 8" */
+        width: 81px;
+        height: 9px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17.33px;
+        padding-left: 3px;
+        padding-right: 13px;  
+    }
+    #top_contacts a[href^=mailto]{
+        /* Style for "contact@bl" */
+        width: 167px;
+        height: 11px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17.33px;
+        padding-left: 3px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    #top_contacts{
+        padding-right: 25.625%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    #top_contacts > div > img[alt=Layer]{
+        width:5px;
+        height:8px;
+    }
+    #top_contacts > div > img[alt=Email]{
+        width:8px;
+        height:6px;
+    }
+    #top_contacts a[href^=tel]{
+        /* Style for "+792 567 8" */
+        width: 61px;
+        height: 7px;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 13px;
+        padding-left: 3px;
+        padding-right: 10px;  
+    }
+    #top_contacts a[href^=mailto]{
+        /* Style for "contact@bl" */
+        width: 126px;
+        height: 8px;
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 13px;
+        padding-left: 3px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    #top_contacts{
+        padding-right: 25.625%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    #top_contacts > div > img[alt=Layer]{
+        width:3px;
+        height:5px;
+    }
+    #top_contacts > div > img[alt=Email]{
+        width:5px;
+        height:4px;
+    }
+    #top_contacts a[href^=tel]{
+        /* Style for "+792 567 8" */
+        width: 41px;
+        height: 4px;
+        font-size: 6px;
+        font-weight: 400;
+        line-height: 8.67px;
+        padding-left: 2px;
+        padding-right: 7px;  
+    }
+    #top_contacts a[href^=mailto]{
+        /* Style for "contact@bl" */
+        width: 84px;
+        height: 5px;
+        font-size: 6px;
+        font-weight: 400;
+        line-height: 8.67px;
+        padding-left: 2px;
+    }
 }
