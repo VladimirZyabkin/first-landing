@@ -1,6 +1,6 @@
 #news{
-    margin-left: 25.5208333333%;
-    margin-right: 24%;
+    width: 960px;
+    margin: 0 auto;
 }
 #news > span{
     /* Style for "LATEST NEW" */
@@ -16,11 +16,9 @@
     letter-spacing: 0.45px;
 }
 .news_container{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-   
-    width: 960px;
+    flex-wrap: wrap; */
     height: 339px;
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.02);
     border: 1px solid #eae1d2;
@@ -40,27 +38,27 @@
 }
 .news_block > div{
     width: 320px;
-    margin-top: 13px;
 }
 .news_block > img{
     align-self: flex-start;
-    margin: 10px 20px 0px 10px;
+    margin: 4px 28px 0px 4px;
 }
-.news_block > div > span{
+.news_block_tittle{
     /* Style for "SOME INTER" */
-    height: 11px;
     color: #666666;
     font-family: "Merriweather Sans";
     font-size: 14px;
     font-weight: 400;
-    line-height: 32px;
+    /* line-height: 32px; */
     text-transform: uppercase;
     /* Text style for "SOME INTER" */
     letter-spacing: 0.35px;
+    margin-top: 13px;
+    margin-bottom: 17px;
 }
 .news_block > div > p{
     /* Style for "Lorem ipsu" */
-    height: 59px;
+    /* height: 59px; */
     color: #888888;
     font-family: "Noto Sans";
     font-size: 14px;
@@ -88,8 +86,196 @@
     letter-spacing: 0.7px;
 }
 .topMargin{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .bottomMargin{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+} 
+
+@media screen and (max-width: 1280px){
+    #news{
+        width: 640px;
+        margin: 0 auto;
+    }
+    #news > span{
+        /* Style for "LATEST NEW" */
+        width: 83px;
+        height: 9px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 21.33px;
+        /* Text style for "LATEST NEW" */
+        letter-spacing: 0.3px;
+    }
+    .news_container{
+        height: 226px;
+        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.02);
+        margin-top: 13px; 
+    }
+    .news_block > div{
+        width: 210px;
+    }
+    .news_block > img{
+        width: 67px;
+        height: 67px;
+        margin: 3px 18px 0px 3px;
+    }
+    .news_block_tittle{
+        /* Style for "SOME INTER" */
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 21.33px;
+        /* Text style for "SOME INTER" */
+        letter-spacing: 0.23px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    .news_block > div > p{
+        /* Style for "Lorem ipsu" */
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 16px;
+        /* Text style for "Lorem ipsu" */
+        letter-spacing: 0.23px;
+        margin: 0px 0px 10px;
+    }
+    .news_block > div > button{
+        /* Style for "Shape 39 c" */
+        width: 80px;
+        height: 20px; 
+        /* Style for "READ MORE" */
+        font-size: 9px;
+        font-weight: 400;
+        letter-spacing: 0.47px;
+    }
+    .topMargin{
+        margin-top: 12px;
+    }
+    .bottomMargin{
+        margin-bottom: 12px;
+    } 
+}
+
+@media screen and (max-width: 960px){
+    #news{
+        width: 480px;
+        margin: 0 auto;
+    }
+    #news > span{
+        /* Style for "LATEST NEW" */
+        font-size: 9px;
+        font-weight: 400;
+        line-height: 16px;
+        /* Text style for "LATEST NEW" */
+        letter-spacing: 0.23px;
+    }
+    .news_container{
+        height: 170px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.02);
+        margin-top: 10px; 
+    }
+    .news_block > div{
+        width: 155px;
+    }
+    .news_block > img{
+        width: 50px;
+        height: 50px;
+        margin: 2px 14px 0px 2px;
+    }
+    .news_block_tittle{
+        /* Style for "SOME INTER" */
+        font-size: 7px;
+        font-weight: 400;
+        line-height: 16px;
+        /* Text style for "SOME INTER" */
+        letter-spacing: 0.17px;
+        margin-top: 3px;
+        margin-bottom: 5px;
+    }
+    .news_block > div > p{
+        /* Style for "Lorem ipsu" */
+        font-size: 7px;
+        font-weight: 400;
+        line-height: 12px;
+        /* Text style for "Lorem ipsu" */
+        letter-spacing: 0.17px;
+        margin: 0px 0px 4px;
+    }
+    .news_block > div > button{
+        /* Style for "Shape 39 c" */
+        width: 67px;
+        height: 15px; 
+        /* Style for "READ MORE" */
+        font-size: 7px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+    }
+    .topMargin{
+        margin-top: 6px;
+    }
+    .bottomMargin{
+        margin-bottom: 6px;
+    } 
+}
+
+@media screen and (max-width: 640px){
+    #news{
+        width: 320px;
+        margin: 0 auto;
+    }
+    #news > span{
+        /* Style for "LATEST NEW" */
+        font-size: 6px;
+        font-weight: 400;
+        line-height: 10.67px;
+        /* Text style for "LATEST NEW" */
+        letter-spacing: 0.15px;
+    }
+    .news_container{
+        height: 145px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.02);
+        margin-top: 7px; 
+    }
+    .news_block > div{
+        width: 100px;
+    }
+    .news_block > img{
+        width: 33px;
+        height: 33px;
+        margin: 2px 10px 0px 2px;
+    }
+    .news_block_tittle{
+        /* Style for "SOME INTER" */
+        font-size: 5px;
+        font-weight: 400;
+        line-height: 10.67px;
+        /* Text style for "SOME INTER" */
+        letter-spacing: 0.12px;
+        /* margin-top: 3px;
+        margin-bottom: 4px; */
+    }
+    .news_block > div > p{
+        /* Style for "Lorem ipsu" */
+        font-size: 5px;
+        font-weight: 400;
+        line-height: 8px;
+        /* Text style for "Lorem ipsu" */
+        letter-spacing: 0.12px;
+        margin: 0;
+    }
+    .news_block > div > button{
+        /* Style for "Shape 39 c" */
+        width: 37px;
+        height: 10px; 
+        /* Style for "READ MORE" */
+        font-size: 5px;
+        font-weight: 400;
+        letter-spacing: 0.23px;
+    }
+    .topMargin{
+        margin-top: 4px;
+    }
+    .bottomMargin{
+        margin-bottom: 4px;
+    } 
 }
