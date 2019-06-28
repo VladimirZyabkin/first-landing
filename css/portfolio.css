@@ -1,13 +1,6 @@
 #portfolio{
-    /* display: flex;
-    flex-direction: column; */
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 977.5px; */
-    /* width: 51%; */
-    /* margin-right: 23%; */ 
-}
-.portfolio_content{
+    width: 959px;
+    margin: 0 auto;
     overflow: hidden;
 }
 .portfolio_tittle{
@@ -24,9 +17,14 @@
     text-align: center;
     /* padding-bottom: 27px; */
 }
+.portfolio_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
 .portfolio_content_mask{
     position: relative;
-    overflow: hidden;
     white-space: nowrap;
     font-size: 0;
 }
@@ -88,5 +86,11 @@ img[alt=left-arrow]{
 }
 img[alt=right-arrow]{
     padding-left: 6px; 
+}
+
+@media screen and (max-width: 1000px){
+    #portfolio{
+        width: 95.9%;
+    }
 }
 

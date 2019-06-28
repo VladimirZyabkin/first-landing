@@ -1,17 +1,20 @@
 #footer{
-    height: 380px;
+    /* height: 380px; */
     background-color: #3c3c3c;
 }
 .footer_block_info{
-    margin-left: 25.5208333333%;
-    margin-right: 24%;
+    width:960px;
+    margin: 0 auto;
 }
 .footer_info{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+}
+.footer_info > div,form{
+    margin: 20px 0px 0px 20px;
 }
 .footer_tittle{
     /* Style for "NAVIGATION" */
@@ -27,8 +30,8 @@
 }
 .navigation_menu > ul{
     list-style-image: url("../images/footer/list_style_image.png");
-    margin: 10px;
-    padding: 0;
+    /* margin: 10px; */
+    padding-left: 10px;
     
 }
 .navigation_menu a{
@@ -51,26 +54,21 @@
     background-color: #eff0f0;
 }
 form > input{
+    width: 260px;
     margin-bottom: 10px;
 }
 form > input[type=tel], input[type=email], #name{
     /* Style for "Shape 70" */
-    width: 260px;
     height: 30px;
 }
 form > #msg{
-    width: 260px;
     height: 60px;
 }
 form > input[type=submit]{
     /* Style for "Shape 39" */
     width: 120px;
     height: 30px;
-    border: 1px solid #a82020;
-    background-color: #b84a19;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
-    
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+    background-color: #b24818;
     color: #fdfefe;
     font-family: "Noto Sans";
     font-size: 14px;
@@ -78,6 +76,12 @@ form > input[type=submit]{
     text-transform: uppercase;
     /* Text style for "CONTACT US" */
     letter-spacing: 0.7px;
+}
+form > input[type=submit]:hover{
+    border: 1px solid #a82020;
+    background-color: #b84a19;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
 }
 .footer_links_logo{
     display: flex;
@@ -105,5 +109,36 @@ form > input[type=submit]{
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
+}
+
+@media screen and (max-width: 1000px){
+    .footer_block_info{
+        width:96%;
+    }
+}
+@media screen and (max-width: 660px){
+    .footer_info{
+        justify-content: space-around;
+        /* padding-top: 20px; */
+    }
+}
+@media screen and (max-width: 360px){
+    .footer_info{
+        justify-content: flex-start;
+        /* padding-top: 20px; */
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 660px){
+    form{
+        width: 100%;
+    }
+    form > input{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .copyright > span{
+        margin-left: 5%;
+    }
 }
 

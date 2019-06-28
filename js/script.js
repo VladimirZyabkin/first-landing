@@ -4,6 +4,7 @@ window.onload = function(){
 }
 window.onresize = function(){
     resizeImgSlider();
+    resizeCarousel();
 }
 // -------- RESIZE ---------
 function resizeImgSlider(){
@@ -30,7 +31,7 @@ function getPortfolioData(){
 }
 function setPortfolio(){
     var data = getPortfolioData();
-    data.portfolio.style.width = data.size * 4 - 1 + "px";
+    //data.portfolio.style.width = data.size * 4 - 1 + "px";
     data.portfolioMask.style.width = data.size * data.portfolioMask.children.length + 'px';
     data.portfolioMask.style.left = -data.size + 'px';
 }
@@ -46,53 +47,16 @@ function pressRight(){
     var clonePMask = data.portfolioMask.cloneNode(true);
     data.portfolioMask.appendChild(clonePMask.children[1]);
 }
-// -------- PORTFOLIO CAROUSEL ---------
-var portfolioIdx = 0;
-function selectPortfolio(course){
-    var elem = document.querySelectorAll('#portfolio .portfolio_content_block');
-    var count = elem.length;
-    if(portfolioIdx + course < 0 || portfolioIdx + course >= count) return;
-    
-    elem[portfolioIdx].classList.remove('checked');
-    elem[portfolioIdx].classList.add('unchecked');
-    elem[portfolioIdx].children[0].classList.remove('portfolio_opacity');
-
-    portfolioIdx += course;
-
-    elem[portfolioIdx].classList.remove('unchecked');
-    elem[portfolioIdx].classList.add('checked');
-    elem[portfolioIdx].children[0].classList.add('portfolio_opacity');
-
-    var elem = document.querySelectorAll('#portfolio-arrows .arrow');
-    if(portfolioIdx == 0)
-    {
-        if(elem[0].classList.contains('pressed'))
-        {
-            elem[0].classList.remove('pressed');
-        }
-    }
-    else if(portfolioIdx == count - 1)
-    {
-        if(elem[1].classList.contains('pressed'))
-        {
-            elem[1].classList.remove('pressed');
-        }
-    }
-    else
-    {
-        if(!elem[0].classList.contains('pressed'))
-        {
-            elem[0].classList.add('pressed');
-        }
-        if(!elem[1].classList.contains('pressed'))
-        {
-            elem[1].classList.add('pressed');
-        }
-    }
-}
-
-// -------- SERVICES CLICK ---------
-var servicesIdx = 0;
-function servicesClick(elem){
-    
+function resizeCarousel(){
+    var portfolio = document.getElementById('portfolio');
+    var sizePortfolio = portfolio.getBoundingClientRect();
+    var widthPortfolio = sizePortfolio.right - sizePortfolio.left; 
+    if(widthPortfolio >= 959) return;
+    var blocks = document.querySelectorAll('.portfolio_content_block');
+    var firstBlock = blocks[0].getBoundingClientRect();
+    var nextBlock = blocks[1].getBoundingClientRect();
+    var fullSize = nextBlock.left - firstBlock.left;
+    var clearSize = firstBlock.right - firstBlock.left;
+    var countVisible = parseInt(widthPortfolio / fullSize);
+    //alert(countVisible);
 }

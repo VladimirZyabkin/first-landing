@@ -12,7 +12,7 @@
     letter-spacing: 0.45px;
 }
 #lorem-ipsum .block{
-    height: 312px;
+    /* height: 312px; */
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.02);
     border: 1px solid #eae1d2;
     background-color: rgba(255, 255, 255, 0.3);
@@ -70,167 +70,26 @@
     padding: 5px 0px 0px 10px;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1000px){
     #lorem-ipsum > div{
-        width: 640px;
+        width: 96%;
     }
-    .li_title{
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 21.33px;
-        letter-spacing: 0.3px;
+}
+@media screen and (max-width: 930px){
+    .li_block_info{
+        /* Style for "Contrary t" */
+        height: auto;
     }
-    #lorem-ipsum .block{
-        height: 208px;
-        box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.02);
-        margin-top:13px;
-        padding: 7px 13px 14px 15px;
-    }
+}
+@media screen and (max-width: 550px){
     .li_image{
         width: 227px;
         height: 180px;
-        margin-right: 13px;
-        padding: 151px 0px 0px 0px; 
-    }
-    .li_block_tittle{
-        margin-top: -3px;
-        margin-bottom: 10px;
-        /* Style for "Why do we" */
-        font-size: 9px;
-        font-weight: 400;
-        line-height: 21.33px;
-        /* Text style for "Why do we" */
-        letter-spacing: 0.23px;
-    }
-    .li_block_info{
-        /* Style for "Contrary t" */
-        height: 150px;
-        font-size: 9px;
-        font-weight: 400;
-        line-height: 16px;
-        /* Text style for "Contrary t" */
-        letter-spacing: 0.23px;
-    }
-    .li_img_info{
-        /* Style for "Rectangle" */
-        width: 153px;
-        height: 21px;
-        /* Style for "There are" */
-        font-size: 9px;
-        font-weight: 400;
-        line-height: 16px;
-        /* Text style for "T, here ar" */
-        letter-spacing: 0.23px;
-        padding: 2.5px 0px 0px 9px;
-    }
-}
-
-@media screen and (max-width: 960px){
-    #lorem-ipsum > div{
-        width: 480px;
-    }
-    .li_title{
-        font-size: 9px;
-        font-weight: 400;
-        line-height: 16px;
-        letter-spacing: 0.23px;
-    }
-    #lorem-ipsum .block{
-        height: 156px;
-        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.02);
-        margin-top:10px;
-        padding: 10px 11px 11px 5px;
-    }
-    .li_image{
-        width: 170px;
-        height: 135px;
         margin-right: 10px;
-        padding: 114px 0px 0px 0px; 
-    }
-    .li_block_tittle{
-        margin-top: -3px;
-        margin-bottom: 10px;
-        /* Style for "Why do we" */
-        font-size: 7px;
-        font-weight: 400;
-        line-height: 16px;
-        /* Text style for "Why do we" */
-        letter-spacing: 0.17px;
-    }
-    .li_block_info{
-        /* Style for "Contrary t" */
-        height: 115px;
-        font-size: 7px;
-        font-weight: 400;
-        line-height: 12px;
-        /* Text style for "Contrary t" */
-        letter-spacing: 0.17px;
+        padding: 141px 0px 0px 0px; 
     }
     .li_img_info{
         /* Style for "Rectangle" */
-        width: 115px;
-        height: 16px;
-        /* Style for "There are" */
-        font-size: 7px;
-        font-weight: 400;
-        line-height: 12px;
-        /* Text style for "T, here ar" */
-        letter-spacing: 0.17px;
-        padding: 2.5px 0px 0px 9px;
-    }
-}
-
-@media screen and (max-width: 640px){
-    #lorem-ipsum > div{
-        width: 320px;
-    }
-    .li_title{
-        font-size: 6px;
-        font-weight: 400;
-        line-height: 10.67px;
-        letter-spacing: 0.15px;
-    }
-    #lorem-ipsum .block{
-        height: 104px;
-        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.02);
-        margin-top:7px;
-        padding: 7px 7px 7px 3px;
-    }
-    .li_image{
-        width: 113px;
-        height: 90px;
-        margin-right: 7px;
-        padding: 76px 0px 0px 0px; 
-    }
-    .li_block_tittle{
-        margin-top: -3px;
-        margin-bottom: 6px;
-        /* Style for "Why do we" */
-        font-size: 5px;
-        font-weight: 400;
-        line-height: 10.67px;
-        /* Text style for "Why do we" */
-        letter-spacing: 0.12px;
-    }
-    .li_block_info{
-        /* Style for "Contrary t" */
-        height: 77px;
-        font-size: 5px;
-        font-weight: 400;
-        line-height: 8px;
-        /* Text style for "Contrary t" */
-        letter-spacing: 0.12px;
-    }
-    .li_img_info{
-        /* Style for "Rectangle" */
-        width: 77px;
-        height: 10px;
-        /* Style for "There are" */
-        font-size: 5px;
-        font-weight: 400;
-        line-height: 8px;
-        /* Text style for "T, here ar" */
-        letter-spacing: 0.12px;
-        padding: 2px 0px 0px 6px;
+        width: 180px;
     }
 }

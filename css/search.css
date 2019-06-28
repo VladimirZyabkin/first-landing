@@ -3,6 +3,10 @@
     height: 150px;
     text-align: center;
 }
+.search_content{
+    width: 940px;
+    margin: 0 auto;
+}
 .search_logo{
     /* Style for "Search" */
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);
@@ -16,20 +20,20 @@
     text-align: center;
     padding: 7.5px;
 }
-.search_content{
+.search_block{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.search_content > input{
+.search_block > input{
     /* Style for "Rectangle" */
     width: 770px;
     height: 38px;
     border: 1px solid #954019;
     background-color: #ffffff;
 }
-.search_content > button{
+.search_block > button{
     /* Style for "Rounded Re" */
     width: 170px;
     height: 40px;
@@ -45,115 +49,51 @@
     letter-spacing: 0.7px;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 960px){
+    .search_content{
+        width: 97.916666667%;
+    }
+    .search_block > input{
+        /* Style for "Rectangle" */
+        width: 80.208333333%;
+        height: 38px;
+    }
+    .search_block > button{
+        /* Style for "Rounded Re" */
+        width: 17.708333333%;
+        height: 40px;
+    }
+}
+@media screen and (max-width: 560px){
     #search{
-        height: 100px;
+        height: 90px;
+    }
+    .search_content{
+        width: 97.916666667%;
+    }
+    .search_block > input{
+        /* Style for "Rectangle" */
+        width: 80.208333333%;
+        height: 25px;
+    }
+    .search_block > button{
+        /* Style for "Rounded Re" */
+        /* width: 17.708333333%; */
+        width: 90px;
+        height: 27px;
+        font-size: 11px;
+        letter-spacing: 0.47px;
+    }
+    .search_block > button > img{
+        width:15px;
+        height:15px;
     }
     .search_logo{
         /* Style for "Search" */
         font-size: 24px;
-        font-weight: 700;
         /* Text style for "Search" */
         letter-spacing: 1.2px;
-        padding: 4px;
-    }
-    .search_content{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .search_content > input{
-        /* Style for "Rectangle" */
-        width: 513px;
-        height: 25px;
-    }
-    .search_content > button{
-        /* Style for "Rounded Re" */
-        width: 113px;
-        height: 27px;
-        font-size: 9px;
-        font-weight: 400;
-        /* Text style for "Search" */
-        letter-spacing: 0.47px;
-    }
-    .search_content > button > img{
-        width: 13px;
-        height: 13px;
-    }
-}
-
-@media screen and (max-width: 960px){
-    #search{
-        height: 75px;
-    }
-    .search_logo{
-        /* Style for "Search" */
-        font-size: 18px;
-        font-weight: 700;
-        /* Text style for "Search" */
-        letter-spacing: 0.9px;
-        padding: 3.5px;
-    }
-    .search_content{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .search_content > input{
-        /* Style for "Rectangle" */
-        width: 385px;
-        height: 19px;
-    }
-    .search_content > button{
-        /* Style for "Rounded Re" */
-        width: 85px;
-        height: 20px;
-        font-size: 7px;
-        font-weight: 400;
-        letter-spacing: 0.35px;
-    }
-    .search_content > button > img{
-        width: 10px;
-        height: 10px;
-    }
-}
-
-@media screen and (max-width: 640px){
-    #search{
-        height: 50px;
-    }
-    .search_logo{
-        /* Style for "Search" */
-        font-size: 12px;
-        font-weight: 700;
-        /* Text style for "Search" */
-        letter-spacing: 0.6px;
-        padding: 2.5px;
-    }
-    .search_content{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .search_content > input{
-        /* Style for "Rectangle" */
-        width: 257px;
-        height: 13px;
-    }
-    .search_content > button{
-        /* Style for "Rounded Re" */
-        width: 57px;
-        height: 13px;
-        /* Style for "Search" */
-        font-size: 5px;
-        font-weight: 400;
-        letter-spacing: 0.23px;
-    }
-    .search_content > button > img{
-        width: 7px;
-        height: 7px;
+        padding: 0;
+        margin: 0;
     }
 }
