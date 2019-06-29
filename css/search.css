@@ -48,6 +48,21 @@
     /* Text style for "Search" */
     letter-spacing: 0.7px;
 }
+.search_block > button > img[alt=searching_hover]{
+    display: none;
+}
+.search_block > button:hover{
+    border: 1px solid #d4c9b8;
+    background-color: #484848;
+    color: #ffffff;
+}
+.search_block > button:hover img[alt=searching]{
+    display: none;
+}
+.search_block > button:hover img[alt=searching_hover]{
+    display: inline;
+}
+
 
 @media screen and (max-width: 960px){
     .search_content{

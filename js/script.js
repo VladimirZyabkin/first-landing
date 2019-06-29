@@ -1,18 +1,34 @@
 window.onload = function(){
     resizeImgSlider();
     setPortfolio();
+    resizeCarousel();
+    checkNavbarExpand();
 }
 window.onresize = function(){
     resizeImgSlider();
     resizeCarousel();
+    checkNavbarExpand();
+}
+// -------- CHECK NAVBAR EXPAND ---------
+function checkNavbarExpand(){
+    var navbar = document.getElementById('nbMenu');
+    var width = document.body.clientWidth;
+    //alert(width);
+    if(width > 870 && navbar.classList.contains('navbar-expand-lg')){
+        navbar.classList.remove('navbar-expand-lg');
+        navbar.classList.add('navbar-expand-md');
+    }
+    else if(width <= 870 && navbar.classList.contains('navbar-expand-md')){
+        navbar.classList.remove('navbar-expand-md');
+        navbar.classList.add('navbar-expand-lg');
+    }
 }
 // -------- RESIZE ---------
 function resizeImgSlider(){
     var elements = document.querySelectorAll('div#slider > .carousel-inner > .carousel-item > img');
     for (let index = 0; index < elements.length; index++) {
         var element = elements[index];
-        element.style.width = window.innerWidth + "px"; 
-        
+        element.style.width = window.innerWidth + "px";         
     }
 }
 // -------- PORTFOLIO CAROUSEL ---------

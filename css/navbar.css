@@ -1,24 +1,31 @@
+#navbar-container{
+    background-color: #000000;
+    background-image: linear-gradient(to top, #ab4418 0%, #b84c1e 100%);
+    
+}
 #nbMenu{
-    background-image: url("../images/navbar/Shape_63.png"); 
-    height: 50px; 
-    margin: 0; 
+    /* Style for "Shape 63" */
+    width: 960px;
+    background-color: #000000;
+    background-image: linear-gradient(to top, #ab4418 0%, #b84c1e 100%);
+    margin: 0 auto;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 #brand_name {
-    width: 302px;
     color: #65270c;
     font-family: "Merriweather Sans";
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    padding: auto;
-    padding-left: 25%;
+    margin: 0;
     z-index: 1;
 }
 #collapsibleNavbar{
-    background-image: url("../images/navbar/Shape_63.png");
-    background-size:cover;
-    padding-left: 21.2%;
+    background-image: linear-gradient(to top, #ab4418 0%, #b84c1e 100%);
     z-index: 0;
 }
 #collapsibleNavbar ul li a[class^=nav-link]{
@@ -28,7 +35,16 @@
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    padding-right: 20px;
+    padding: 0px 0px 0px 20px;
 
+}
+#collapsibleNavbar > ul > li > a:hover, :active{
+    color: #000000;
+}
+
+@media screen and (max-width: 1000px){
+    #nbMenu{
+        width:96%;
+    }
 }
 

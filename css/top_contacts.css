@@ -3,16 +3,18 @@
     flex-direction: row; 
     justify-content: flex-end;
     flex-wrap: wrap; 
-    padding-right: 25.57291666667%;
+    width: 960px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
+    margin: 0 auto;
 }
 #top_contacts > div > img[alt=Layer]{
     display: inline-block;
 
 }
 #top_contacts > div > img[alt=Email]{
-    display: inline-block; 
+    display: inline-block;
+    padding-left: 20px; 
 }
 #top_contacts a {
     text-decoration: none;
@@ -26,8 +28,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    padding-left: 5px;
-    padding-right: 20px; 
+    padding-left: 5px; 
 }
 #top_contacts a[href^=mailto]{
     /* Style for "contact@bl" */
@@ -39,4 +40,10 @@
     font-weight: 400;
     line-height: 26px;
     padding-left: 5px;
+}
+
+@media screen and (max-width: 1000px){
+    #top_contacts{
+        width: 96%;
+    }
 }

@@ -79,16 +79,16 @@ img[alt=Line_Portfolio]{
     margin-right: 15px;
 }
 .arrow{
-    background-image: url("../images/portfolio/press_shape.png");
+    background-image: url("../images/portfolio/shape.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin:2px;
 }
-.arrow:hover{
+.arrow:active{
     transform: scale(0.9);
 }
-.arrow:active{
-    background-image: url("../images/portfolio/shape.png");
+.arrow:hover{
+    background-image: url("../images/portfolio/press_shape.png");
 }
 img[alt=left-arrow]{
     padding-left: 4px; 
