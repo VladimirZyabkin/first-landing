@@ -24,6 +24,9 @@
     
 }
 .portfolio_content_mask{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
     white-space: nowrap;
     font-size: 0;
@@ -70,8 +73,8 @@
     margin-top: 6px;
 }
 img[alt=Line_Portfolio]{
-    width: 44.1145833333%;
-    margin-left: 25.0520833333%;
+    width: 88%;
+    /* margin-left: 25.0520833333%; */
     padding: 20px 0px;
     margin-right: 15px;
 }
@@ -81,6 +84,12 @@ img[alt=Line_Portfolio]{
     background-repeat: no-repeat;
     margin:2px;
 }
+.arrow:hover{
+    transform: scale(0.9);
+}
+.arrow:active{
+    background-image: url("../images/portfolio/shape.png");
+}
 img[alt=left-arrow]{
     padding-left: 4px; 
 }
@@ -88,9 +97,23 @@ img[alt=right-arrow]{
     padding-left: 6px; 
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 999px){
     #portfolio{
         width: 95.9%;
+    }
+    img[alt=Line_Portfolio]{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 800px){
+    img[alt=Line_Portfolio]{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 430px){
+    img[alt=Line_Portfolio]{
+        width: 60%;
     }
 }
 

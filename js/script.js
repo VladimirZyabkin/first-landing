@@ -51,12 +51,30 @@ function resizeCarousel(){
     var portfolio = document.getElementById('portfolio');
     var sizePortfolio = portfolio.getBoundingClientRect();
     var widthPortfolio = sizePortfolio.right - sizePortfolio.left; 
-    if(widthPortfolio >= 959) return;
     var blocks = document.querySelectorAll('.portfolio_content_block');
+    var portfolioMask = document.querySelector('.portfolio_content_mask');
     var firstBlock = blocks[0].getBoundingClientRect();
     var nextBlock = blocks[1].getBoundingClientRect();
-    var fullSize = nextBlock.left - firstBlock.left;
     var clearSize = firstBlock.right - firstBlock.left;
-    var countVisible = parseInt(widthPortfolio / fullSize);
-    //alert(countVisible);
+    if(widthPortfolio >= 959) {
+        for (let index = 0; index < blocks.length; index++) {
+            const element = blocks[index];
+            element.style.margin = "20px 20px 0px 0px";
+        }
+        portfolioMask.style.left = -(clearSize + 20) + 'px';
+        return;
+    }
+    var countVisible = parseInt(widthPortfolio / (clearSize + 20));
+    var margin;
+    if(countVisible == 1){
+        margin = (widthPortfolio - clearSize) / 2;
+    }
+    else{
+        margin = (widthPortfolio - (clearSize + 20) * countVisible) / (countVisible - 1);
+    }
+    for (let index = 0; index < blocks.length; index++) {
+        const element = blocks[index];
+        element.style.margin = countVisible > 1 ? "20px " + (margin + 20) + "px 0px 0px" : "20px " + margin + "px 0px " + margin + "px";
+    }
+    portfolioMask.style.left = countVisible > 1 ? -(clearSize + 20 + margin) + 'px' : -(clearSize + 2 * margin) + 'px';
 }
