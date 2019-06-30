@@ -1,12 +1,35 @@
-.block_info{
-    /* Style for "Фигура 1" */
-    width: 662px;
-    height: 350px;
+.carousel-caption{
+    /* width: 662px;
+    height: 350px; */
     border: 1px solid #4e3644;
     background-color: rgba(76, 52, 66, 0.5);
-    background-color: #ffffff;
-    opacity: 0.6;
+    position: absolute;
+    /* padding-top: 80px;
+    left: 26.09375%;
+    top: 85px; */
 }
-#slider{
-    z-index: -1;
+.carousel-caption > span{
+    /* Style for "CONTRARY T" */
+    /* width: 577px;
+    height: 27px; */
+    color: #fffefe;
+    font-family: "Merriweather Sans";
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 50px;
+    margin-bottom: 20px;  
+}
+.carousel-caption > p {
+    /* Style for "Lorem Ipsu" */
+    /* width: 564px;
+    height: 130px; */
+    color: #ffffff;
+    font-family: "Merriweather Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 20px 25px 0px;
+    text-align: justify;
 }

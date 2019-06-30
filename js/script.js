@@ -3,11 +3,34 @@ window.onload = function(){
     setPortfolio();
     resizeCarousel();
     checkNavbarExpand();
+    //changeSliderDataPosition();
 }
 window.onresize = function(){
     resizeImgSlider();
     resizeCarousel();
     checkNavbarExpand();
+    //changeSliderDataPosition();
+}
+// -------- SLIDER --------------
+function changeSliderDataPosition(){
+    var width = document.body.clientWidth;
+    var captions = document.querySelectorAll('.carousel-caption');
+    var slider = document.getElementById('slider');
+    for (let index = 0; index < captions.length; index++) {
+        const element = captions[index];
+        if(slider.clientHeight < 450){
+            element.style.height = slider.clientHeight - 100 + 'px';
+        }
+        else element.style.height = 350 + 'px';
+    }
+    //alert((width - 960) / 2 + " : " + slider.clientHeight + " : " + captions[0].clientHeight);
+    var left_margin = (width - 960) / 2;
+    var top_margin = (slider.clientHeight - parseFloat(captions[0].style.height)) / 2;
+    for (let index = 0; index < captions.length; index++) {
+        const element = captions[index];
+        element.style.left = left_margin + 'px';
+        element.style.top = top_margin + 'px';
+    }
 }
 // -------- CHECK NAVBAR EXPAND ---------
 function checkNavbarExpand(){

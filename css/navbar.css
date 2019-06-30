@@ -22,11 +22,11 @@
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
-    z-index: 1;
+    /* z-index: 1; */
 }
 #collapsibleNavbar{
     background-image: linear-gradient(to top, #ab4418 0%, #b84c1e 100%);
-    z-index: 0;
+    /* z-index: 0; */
 }
 #collapsibleNavbar ul li a[class^=nav-link]{
     text-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
@@ -45,6 +45,16 @@
 @media screen and (max-width: 1000px){
     #nbMenu{
         width:96%;
+    }
+}
+@media screen and (max-width: 400px){
+    #brand_name {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 350px){
+    #brand_name {
+        font-size: 27px;
     }
 }
 
