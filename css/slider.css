@@ -1,29 +1,25 @@
 .carousel-caption{
-    /* width: 662px;
-    height: 350px; */
+    width: 662px;
+    height: 350px;
     border: 1px solid #4e3644;
     background-color: rgba(76, 52, 66, 0.5);
     position: absolute;
-    /* padding-top: 80px;
-    left: 26.09375%;
-    top: 85px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+/*     padding-top: 60px; */
 }
 .carousel-caption > span{
     /* Style for "CONTRARY T" */
-    /* width: 577px;
-    height: 27px; */
     color: #fffefe;
     font-family: "Merriweather Sans";
     font-size: 36px;
     font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 50px;
-    margin-bottom: 20px;  
+    text-transform: uppercase;  
 }
 .carousel-caption > p {
     /* Style for "Lorem Ipsu" */
-    /* width: 564px;
-    height: 130px; */
     color: #ffffff;
     font-family: "Merriweather Sans";
     font-size: 24px;
@@ -32,4 +28,80 @@
     text-transform: uppercase;
     margin: 20px 25px 0px;
     text-align: justify;
+}
+
+@media screen and (max-width: 1600px){
+    .carousel-caption{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .carousel-caption{
+        height: 200px;
+    }
+    .carousel-caption > span{
+        font-size: 24px;
+    }
+    .carousel-caption > p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1050px){
+    .carousel-caption{
+        height: 150px;
+    }
+    .carousel-caption > span{
+        font-size: 24px;
+    }
+    .carousel-caption > p {
+        font-size: 16px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+}
+@media screen and (max-width: 964px){
+    .carousel-caption{
+        width: 400px;
+        height: 150px;
+    }
+    .carousel-caption > span{
+        font-size: 18px;
+    }
+    .carousel-caption > p {
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+    .carousel-indicators{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 700px){
+    .carousel-caption{
+        height: 110px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 580px){
+    .carousel-caption{
+        width: 280px;
+        height: 80px;
+    }
+    .carousel-caption > span{
+        font-size: 12px;
+    }
+    .carousel-caption > p {
+        font-size: 8px;
+        line-height: 13px;
+        text-align: center;
+        margin: 0px 10px;
+    }
+}
+@media screen and (max-width: 420px){
+    .carousel-caption{
+        display: none;
+    }
 }

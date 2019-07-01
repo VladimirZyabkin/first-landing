@@ -3,33 +3,51 @@ window.onload = function(){
     setPortfolio();
     resizeCarousel();
     checkNavbarExpand();
-    //changeSliderDataPosition();
+    changeSliderDataPosition();
 }
 window.onresize = function(){
     resizeImgSlider();
     resizeCarousel();
     checkNavbarExpand();
-    //changeSliderDataPosition();
+    changeSliderDataPosition();
 }
 // -------- SLIDER --------------
 function changeSliderDataPosition(){
     var width = document.body.clientWidth;
     var captions = document.querySelectorAll('.carousel-caption');
     var slider = document.getElementById('slider');
+    var left_margin;
+    if(width < 1400){
+        var prev = document.querySelector('#slider .carousel-control-prev');
+        left_margin = prev.clientWidth;
+    }
+    else{
+        left_margin = (width - 960) / 2;
+    }
+    var captionHeight;
     for (let index = 0; index < captions.length; index++) {
         const element = captions[index];
-        if(slider.clientHeight < 450){
-            element.style.height = slider.clientHeight - 100 + 'px';
-        }
-        else element.style.height = 350 + 'px';
+        if(element.clientHeight == 0) continue;
+        captionHeight = element.clientHeight;
     }
-    //alert((width - 960) / 2 + " : " + slider.clientHeight + " : " + captions[0].clientHeight);
-    var left_margin = (width - 960) / 2;
-    var top_margin = (slider.clientHeight - parseFloat(captions[0].style.height)) / 2;
+    var top_margin;
+    if(captionHeight <= 964){
+        top_margin = (slider.clientHeight - captionHeight - 23) / 2;
+    }
+    else top_margin = (slider.clientHeight - captionHeight) / 2;
+    /* var widthCaption = null;
+    if(document.body.clientWidth < 700){
+        var prev = document.querySelector('#slider .carousel-control-prev');
+        var next = document.querySelector('#slider .carousel-control-next');
+        widthCaption = next.getBoundingClientRect().left - prev.getBoundingClientRect().right - 20;
+    } */
     for (let index = 0; index < captions.length; index++) {
         const element = captions[index];
         element.style.left = left_margin + 'px';
         element.style.top = top_margin + 'px';
+        /* if(widthCaption != null){
+            element.style.width = widthCaption + 'px';
+        } */
     }
 }
 // -------- CHECK NAVBAR EXPAND ---------
