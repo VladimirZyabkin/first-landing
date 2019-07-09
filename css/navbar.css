@@ -15,6 +15,9 @@
     justify-content: space-between;
 
 }
+.active {
+    color: black;
+}
 #brand_name {
     color: #65270c;
     font-family: "Merriweather Sans";
@@ -23,10 +26,6 @@
     text-transform: uppercase;
     margin: 0;
     /* z-index: 1; */
-}
-#collapsibleNavbar{
-    background-image: linear-gradient(to top, #ab4418 0%, #b84c1e 100%);
-    /* z-index: 0; */
 }
 #collapsibleNavbar ul li a[class^=nav-link]{
     text-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
@@ -38,10 +37,9 @@
     padding: 0px 0px 0px 20px;
 
 }
-#collapsibleNavbar > ul > li > a:hover, :active{
-    color: #000000;
+#collapsibleNavbar > ul > li > a:hover{
+    transform: scale(1.15);
 }
-
 @media screen and (max-width: 1000px){
     #nbMenu{
         width:96%;

@@ -70,7 +70,7 @@
 }
 .news_block > div > button{
     /* Style for "Shape 39 c" */
-    width: 100px;
+    width: 120px;
     height: 30px;
     /* Style for "READ MORE" */
     /* Style for "Shape 39" */
@@ -136,10 +136,37 @@
     }
 }
 @media screen and (max-width: 550px){
-    .nb_row{
+    /* .nb_row{
         justify-content: space-around;
     }
     .news_block{
         flex-direction: column;
+    } */
+    .news_block {
+        flex-wrap: nowrap;
+    }
+    .news_block > div {
+        width: 320px;
+    }
+    .news_block {
+        margin-bottom: 20px;
+    }
+    .nb_row {
+        margin: 0;
+        justify-content: center;
     }
 }
+@media screen and (max-width: 480px){
+    .news_block > div {
+        width: 65%;
+    }
+}
+/* @media screen and (max-width: 370px){
+    .news_block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .news_block > div {
+        width: 95%;
+    }
+} */

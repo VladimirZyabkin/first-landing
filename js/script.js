@@ -4,6 +4,7 @@ window.onload = function(){
     resizeCarousel();
     checkNavbarExpand();
     changeSliderDataPosition();
+    setNavbarSettings();
 }
 window.onresize = function(){
     resizeImgSlider();
@@ -35,19 +36,11 @@ function changeSliderDataPosition(){
         top_margin = (slider.clientHeight - captionHeight - 23) / 2;
     }
     else top_margin = (slider.clientHeight - captionHeight) / 2;
-    /* var widthCaption = null;
-    if(document.body.clientWidth < 700){
-        var prev = document.querySelector('#slider .carousel-control-prev');
-        var next = document.querySelector('#slider .carousel-control-next');
-        widthCaption = next.getBoundingClientRect().left - prev.getBoundingClientRect().right - 20;
-    } */
+
     for (let index = 0; index < captions.length; index++) {
         const element = captions[index];
         element.style.left = left_margin + 'px';
         element.style.top = top_margin + 'px';
-        /* if(widthCaption != null){
-            element.style.width = widthCaption + 'px';
-        } */
     }
 }
 // -------- CHECK NAVBAR EXPAND ---------
@@ -134,4 +127,27 @@ function resizeCarousel(){
         element.style.margin = countVisible > 1 ? "20px " + (margin + 20) + "px 0px 0px" : "20px " + margin + "px 0px " + margin + "px";
     }
     portfolioMask.style.left = countVisible > 1 ? -(clearSize + 20 + margin) + 'px' : -(clearSize + 2 * margin) + 'px';
+}
+
+///////////Active Navbar item
+function activeItem(idx){
+    var navbarLinks = document.querySelectorAll('#nbMenu ul > li > a');
+    for (let index = 0; index < navbarLinks.length; index++) {
+        const element = navbarLinks[index];
+        if(index == idx) element.style.color = "black";
+        else element.style.color = "white";
+        /* if(index == idx) element.classList.add('navbar-choosen-page');
+        else {
+            if(element.classList.contains('navbar-choosen-page'))
+                element.classList.remove('navbar-choosen-page');
+        } */
+    }
+}
+function setNavbarSettings(){
+    var navbarLinks = document.querySelectorAll('#nbMenu ul > li > a');
+    for (let index = 0; index < navbarLinks.length; index++) {
+        const element = navbarLinks[index];
+
+        element.onclick = function(){activeItem(index);}
+    }
 }

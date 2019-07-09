@@ -93,3 +93,13 @@
         width: 180px;
     }
 }
+@media screen and (max-width: 445px){
+    .li_image {
+        float: none;
+        margin: 0 auto; 
+    }
+    .li_block_tittle {
+        text-align: center;
+        margin: 7px 0px 7px;
+    }
+}

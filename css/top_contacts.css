@@ -47,3 +47,8 @@
         width: 96%;
     }
 }
+@media screen and (max-width: 424px){
+    #top_contacts{
+        width: 90%;
+    }
+}

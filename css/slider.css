@@ -100,8 +100,18 @@
         margin: 0px 10px;
     }
 }
-@media screen and (max-width: 420px){
+@media screen and (max-width: 415px){
     .carousel-caption{
-        display: none;
+        width: 210px;
+        height: 60px;
+    }
+    .carousel-caption > span{
+        font-size: 11px;
+    }
+    .carousel-caption > p {
+        font-size: 7px;
+        line-height: 9px;
+        text-align: center;
+        margin: 0px 10px;
     }
 }

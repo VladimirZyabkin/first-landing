@@ -27,7 +27,7 @@
     </div>
 </div>
 <div id="navbar-container">
-    <nav id="nbMenu" class="navbar navbar-expand-md bg-dark navbar-dark">
+    <nav id="nbMenu" class="navbar navbar-expand-md navbar-light bg-light">
         <!-- Brand -->
         <a id="brand_name" class="navbar-brand" href="#">COMPANY NAME</a>
         <!-- Toggler/collapsibe Button -->
@@ -37,8 +37,8 @@
         <div class="collapse navbar-collapse justify-content-stretch" id="collapsibleNavbar">
             <!-- Links -->
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         HOME
                     </a>
                     <div class="dropdown-menu">
@@ -153,7 +153,7 @@
     <div class="search_content">
         <div class="search_logo">Search</div>
         <div class="search_block">
-            <input type="search" />
+            <input type="search" placeholder=" Search..."/>
             <button>
                 <img src="images/search/searching.png" alt="searching" />
                 <img src="images/search/searching_hover.png" alt="searching_hover" />
@@ -275,22 +275,22 @@
             <div class="footer_contacts">
                 <div class="footer_tittle">CONTACTS</div>
                 <img src="./images/footer/phone.png" alt="phone">
-                <span>+792 567 8745</span>
+                <span><a href="tel:+792 567 8745">+792 567 8745</a></span>
                 <br>
                 <img src="./images/footer/mail.png" alt="mail">
-                <span>contact@blueowlcreative.com</span>
+                <span><a href="mailto:contact@blueowlcreative.com">contact@blueowlcreative.com</a></span>
                 <br>
                 <img src="./images/footer/location.png" alt="location">
                 <span>3451 52nd Ave., New York City</span>
             </div>
             <form action="" method="post">
-                <input type="text" class="footer_form_input" id="name" name="name">
+                <input type="text" class="footer_form_input" id="name" name="name" placeholder=" Name">
                 <br>
-                <input type="email" class="footer_form_input">
+                <input type="email" class="footer_form_input" placeholder=" E-mail">
                 <br>
-                <input type="tel" class="footer_form_input">
+                <input type="tel" class="footer_form_input" placeholder=" Phone">
                 <br>
-                <input type="text" class="footer_form_input" id="msg" name="msg">
+                <input type="text" class="footer_form_input" id="msg" name="msg" placeholder=" Message">
                 <br>
                 <input type="submit" value="CONTACT US">
             </form>
