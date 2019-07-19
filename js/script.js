@@ -146,8 +146,8 @@ function activeItem(idx){
 function setNavbarSettings(){
     var navbarLinks = document.querySelectorAll('#nbMenu ul > li > a');
     for (let index = 0; index < navbarLinks.length; index++) {
+        if(index == 0) activeItem(index);
         const element = navbarLinks[index];
-
         element.onclick = function(){activeItem(index);}
     }
 }

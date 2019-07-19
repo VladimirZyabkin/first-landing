@@ -121,7 +121,7 @@ form > input[type=submit]:hover{
 
 
 @media screen and (max-width: 1000px){
-    .footer_block_info{
+    .footer_block_info, .copyright > div{
         width:96%;
     }
     .copyright > div{

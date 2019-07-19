@@ -10,6 +10,20 @@
     text-align: center;
 /*     padding-top: 60px; */
 }
+.carousel-sm-img {
+    display: none;
+    background-size: cover; 
+    height: 300px;
+}
+.layer-139 {
+    background:url(../images/slider/Layer_139.png);
+}
+.layer-140 {
+    background:url(../images/slider/Layer_140.png);
+}
+.layer-138 {
+    background:url(../images/slider/Layer_138.png);
+}
 .carousel-caption > span{
     /* Style for "CONTRARY T" */
     color: #fffefe;
@@ -86,7 +100,17 @@
     }
 }
 @media screen and (max-width: 580px){
+    .carousel-item img {
+        display: none;
+    }
+    .carousel-sm-img {
+        display: block;
+    }
     .carousel-caption{
+        width: 68%;
+        height: 160px;
+    }
+    /* .carousel-caption{
         width: 280px;
         height: 80px;
     }
@@ -98,9 +122,18 @@
         line-height: 13px;
         text-align: center;
         margin: 0px 10px;
-    }
+    } */
 }
 @media screen and (max-width: 415px){
+    .carousel-caption{
+        height: 200px;
+    }
+    /* .carousel-item img {
+        display: none;
+    }
+    .carousel-sm-img {
+        display: block;
+    }
     .carousel-caption{
         width: 210px;
         height: 60px;
@@ -113,5 +146,5 @@
         line-height: 9px;
         text-align: center;
         margin: 0px 10px;
-    }
+    } */
 }
