@@ -32,8 +32,9 @@
     font-size: 0;
 }
 .portfolio_content_block{
-    display: inline-block;
+/*     display: inline-block; */
     /* Style for "Rectangle" */
+    position: relative;
     width: 220px;
     height: 174px;
     margin: 20px 20px 0px 0px;
@@ -47,6 +48,9 @@
 .portfolio_content_block:hover > img{
     opacity: 0.45;
 }
+.portfolio_content_block:hover .portfolio-plus {
+    display: block;
+}
 .portfolio_content_block_info{
 /* Style for "It is a lo" */
     width: 185px;
@@ -58,6 +62,17 @@
     /* Text style for "I, t is a" */
     letter-spacing: 0.35px;
     margin: 5px auto;
+}
+.portfolio-plus {
+    display: none;
+    position: absolute;
+    left: 48%;
+    top: 35%;
+    color: #3c3e3a;
+    font-family: "Noto Sans";
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 32px;
 }
 
 
